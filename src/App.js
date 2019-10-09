@@ -1,10 +1,22 @@
 import React from 'react';
-import Navbar from './componentes/Navbar';
+import {  BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './Componentes/Navbar';
+import Produtos from './Componentes/Produtos';
+import Pagamentos from './Componentes/Pagamentos';
+import Carros from './Componentes/Carros';
+import Home from './Componentes/Home';
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Router>
+        <Route exact path="/" componet={Home} />
+        <Route path="/pagamento" componet={Pagamentos} />
+        <Route path="/produtos" componet={Produtos} />
+        <Route path="/carros" componet={Carros} />
+      </Router>
+      
     </div>
   )
 }
