@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import './Botao.scss'
-const Botao = ({C}) =>{
-    return(
-        <button className="Botao">Botao</button>
+import './Botao.scss';
+
+const Botao = ({ children }) => {
+    return (
+        <button className="Botao">{children}</button>
     )
 }
-
 export default Botao;

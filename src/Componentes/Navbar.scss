@@ -1,8 +1,8 @@
-.Navbar{
+.Navbar {
   nav {
     width: 100%;
     height: 70px;
-    background-color: rgb(3, 3, 48);
+    background-color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,42 +16,46 @@
       span {
         width: 100%;
         height: 5px;
-        background-color: rgba(150, 167, 240, 0.137);
+        background-color: white;
         border-radius: 20px;
       }
-      .sumirIgualTiro{
-        transform: rotate(-45deg)
-      }
-      .virarX1{
-        transform: rotateZ(-45deg)
-        transform-origin:right center;
-        position: relative;
-        bottom: 15px;
-      }
-      .virarX2{
-        transform: rotateZ(45deg);
-        transform-origin: right center;
-        position: relative;
-      }
-
     }
   }
   .menu {
     width: 100%;
     height: 400px;
-    background-color: rgb(6, 19, 56);
+    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     transform: translateX(-100%);
     transition: 0.4s;
     position: absolute;
-    
+    top: 70px;
+    left: 0;
     a {
       margin-left: 30px;
     }
   }
   .ativo {
     transform: translateX(0);
+  }
+}
+@media (min-width:768px){
+  .Navbar{
+    nav{
+      .ancora{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      #menu-hamburguer{
+        display: none;
+      }
+
+    }
+     .menu{
+       display: none;
+     }
   }
 }

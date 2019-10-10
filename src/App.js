@@ -1,24 +1,17 @@
 import React from 'react';
-import {  BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Router } from 'react-router-dom';
 import Navbar from './Componentes/Navbar';
-import Produtos from './Componentes/Produtos';
-import Pagamentos from './Componentes/Pagamentos';
-import Carros from './Componentes/Carros';
 import Home from './Componentes/Home';
+import Cadastro from './Componentes/Cadastro/Cadastro';
 
 const App = () => {
   return (
-    <div>
+
+    <Router>
       <Navbar />
-      <Router>
-        <Botao>
-        <Route exact path="/" componet={Home} />
-        <Route path="/pagamento" componet={Pagamentos} />
-        <Route path="/produtos" componet={Produtos} />
-        <Route path="/carros" componet={Carros} />
-      </Router>
-      
-    </div>
+      <Route exact path="/" component={Home} />
+      <Route path="/cadastro" component={Cadastro} />
+    </Router>
   )
 }
 export default App;

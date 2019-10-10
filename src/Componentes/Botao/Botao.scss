@@ -1,10 +1,15 @@
-.Botao{
-    width: 0%;
-    height: ;
-    border:;
-    border: ;
-    color: ;
-    background: ;
-    border-radius: ;
-    
+.Botao {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border: 1px solid red;
+    color: red;
+    background: unset;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(253, 197, 197);
+    }
+
 }
