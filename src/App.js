@@ -11,6 +11,7 @@ const App = () => {
     <div>
       <Navbar />
       <Router>
+        <Botao>
         <Route exact path="/" componet={Home} />
         <Route path="/pagamento" componet={Pagamentos} />
         <Route path="/produtos" componet={Produtos} />
